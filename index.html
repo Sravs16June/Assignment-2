@@ -4,14 +4,11 @@
   <meta charset="UTF-8" />
   <title>Spotify‑style UI</title>
 
-  <!-- existing CSS + new rules -->
   <link rel="stylesheet" href="index.css" />
 
-  <!-- FontAwesome (icons) -->
   <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
-  <!-- Inter (Spotify‑like) font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
         rel="stylesheet">
@@ -19,7 +16,7 @@
 
 <body>
   <div class="main-box">
-    <!-- ============ HEADER (you already had) ============ -->
+
     <div class="header">
       <div class="hc1">
         <div class="hc11"><i class="fa-brands fa-spotify brand"></i></div>
@@ -46,11 +43,10 @@
         <div class="hc24"><button>Login</button></div>
       </div>
     </div>
-    <!-- /header -->
 
-    <!-- ============ APP LAYOUT: SIDEBAR + CONTENT ============ -->
+
     <div class="app-body">
-      <!-- ░░ LEFT SIDEBAR ░░ -->
+
       <aside class="sidebar">
         <header class="sb-head">
           <span>Your Library</span>
@@ -77,16 +73,14 @@
         </footer>
       </aside>
 
-      <!-- ░░ MAIN  SCROLL AREA ░░ -->
       <main class="content">
 
-        <!-- === Trending songs === -->
         <div class="section-head">
           <h2>Trending songs</h2><a href="#">Show all</a>
         </div>
 
         <div class="row scroll-x">
-          <!-- one album card -->
+
            <div class="album-card">
             <img src="Pranama.jpg" alt="Pranama">
             <p class="title">Pranama</p>
@@ -131,7 +125,6 @@
 
         </div>
 
-        <!-- === Popular artists === -->
         <div class="section-head">
           <h2>Popular artists</h2><a href="#">Show all</a>
         </div>
@@ -184,7 +177,6 @@
           
         </div>
 
-        <!-- === Albums row === -->
         <div class="section-head">
           <h2>Popular albums</h2><a href="#">Show all</a>
         </div>
@@ -233,7 +225,7 @@
           </div>
         </div>
       </main>
-    </div><!-- /.app-body -->
-  </div><!-- /.main-box -->
+    </div>
+  </div>
 </body>
 </html>
