@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Spotify‑style UI</title>
+
+  <!-- existing CSS + new rules -->
+  <link rel="stylesheet" href="index.css" />
+
+  <!-- FontAwesome (icons) -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Inter (Spotify‑like) font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+  <div class="main-box">
+    <!-- ============ HEADER (you already had) ============ -->
+    <div class="header">
+      <div class="hc1">
+        <div class="hc11"><i class="fa-brands fa-spotify brand"></i></div>
+        <div class="hc12"><i class="fa-solid fa-house home"></i></div>
+        <div class="hc13">
+          <div class="hc131"><i class="fa-solid fa-magnifying-glass search"></i></div>
+          <div class="hc132">
+            <input class="ip-ser" type="search"
+                   placeholder="What do you want to search?" />
+          </div>
+          <div class="hc133"><i class="fa-solid fa-window-restore search"></i></div>
+        </div>
+      </div>
+
+      <div class="hc2">
+        <div class="hc21">
+          <a href="#">Premium</a>
+          <a href="#">Support</a>
+          <a href="#">Download</a>
+        </div>
+        <div class="bar"></div>
+        <div class="hc22"><button><i class="fa-solid fa-download"></i> Install App</button></div>
+        <div class="hc23"><button>Signup</button></div>
+        <div class="hc24"><button>Login</button></div>
+      </div>
+    </div>
+    <!-- /header -->
+
+    <!-- ============ APP LAYOUT: SIDEBAR + CONTENT ============ -->
+    <div class="app-body">
+      <!-- ░░ LEFT SIDEBAR ░░ -->
+      <aside class="sidebar">
+        <header class="sb-head">
+          <span>Your Library</span>
+          <i class="fa-solid fa-plus"></i>
+        </header>
+
+        <div class="sb-card">
+          <p class="sb-title">Create your first playlist</p>
+          <p class="sb-sub">It's easy, we'll help you</p>
+          <button class="sb-btn">Create playlist</button>
+        </div>
+
+        <div class="sb-card">
+          <p class="sb-title">Let's find some podcasts to follow</p>
+          <p class="sb-sub">We'll keep you updated on new episodes</p>
+          <button class="sb-btn">Browse podcasts</button>
+        </div>
+
+        <footer class="sb-foot">
+          <a href="#">Legal</a>
+          <a href="#">Privacy</a>
+          <a href="#">Cookies</a>
+          <button class="lang-btn"><i class="fa-solid fa-globe"></i> English</button>
+        </footer>
+      </aside>
+
+      <!-- ░░ MAIN  SCROLL AREA ░░ -->
+      <main class="content">
+
+        <!-- === Trending songs === -->
+        <div class="section-head">
+          <h2>Trending songs</h2><a href="#">Show all</a>
+        </div>
+
+        <div class="row scroll-x">
+          <!-- one album card -->
+           <div class="album-card">
+            <img src="Pranama.jpg" alt="Pranama">
+            <p class="title">Pranama</p>
+            <p class="sub">G. V. Prakash Kumar· Rahul Nambiar</p>
+          </div>
+
+
+          <div class="album-card">
+            <img src="Sandalee.jpg" alt="Sandalee">
+            <p class="title">Sandalee</p>
+            <p class="sub">Mahalingam· Velmurugan</p>
+          </div>
+
+
+          <div class="album-card">
+            <img src="Sivangi Pilla.jpg" alt="Sivangi Pilla">
+            <p class="title">Sivangi Pilla</p>
+            <p class="sub">Jithin Raj</p>
+          </div>
+
+          <br>
+
+
+          <div class="album-card">
+            <img src="Gunde Gilli.jpg" alt="Gunde Gilli">
+            <p class="title">Gunde Gilli</p>
+            <p class="sub">PVNS Rohit</p>
+          </div>     
+          
+
+          <div class="album-card">
+            <img src="Vaaru Veeru.jpeg" alt="Vaaru Veeru">
+            <p class="title">Vaaru Veeru</p>
+            <p class="sub">Anjana Sowmya · Anurag Kulkarni</p>
+          </div>
+
+          <div class="album-card">
+            <img src="Sun Saathiya.jpg" alt="Sun Saathiya">
+            <p class="title">Sun Saathiya...</p>
+            <p class="sub">Divya Kumar · Priya Saraiya</p>
+          </div>
+
+        </div>
+
+        <!-- === Popular artists === -->
+        <div class="section-head">
+          <h2>Popular artists</h2><a href="#">Show all</a>
+        </div>
+
+        <div class="row scroll-x artist-row">
+          <div class="artist-card">
+            <img src="Anirudh Ravichander.jpeg" alt="">
+            <p class="title">Anirudh Ravichander</p><p class="sub">Artist</p>
+          </div>
+
+
+          <div class="artist-card">
+            <img src="G. V. Prakash Kumar.jpeg" alt="">
+            <p class="title">G. V. Prakash Kumar</p><p class="sub">Artist</p>
+          </div>
+
+
+          <div class="artist-card">
+            <img src="Arijith.jpg" alt="">
+            <p class="title">Arijith Singh</p><p class="sub">Artist</p>
+          </div>
+
+          <br>
+
+          <div class="artist-card">
+            <img src="SPB.jpg" alt="">
+            <p class="title">SP Balasubramanyam</p><p class="sub">Artist</p>
+          </div>
+
+          <br>
+
+
+          <div class="artist-card">
+            <img src="Chitra.jpg" alt="">
+            <p class="title">KS Chitra</p><p class="sub">Artist</p>
+          </div>
+
+
+          <div class="artist-card">
+            <img src="Anurag Kulkarni.jpg" alt="">
+            <p class="title">Anurag Kulkarni</p><p class="sub">Artist</p>
+          </div>
+
+
+          <div class="artist-card">
+            <img src="Shreya Goshal.jpeg" alt="">
+            <p class="title">Shreya Goshal</p><p class="sub">Artist</p>
+          </div>
+
+          
+        </div>
+
+        <!-- === Albums row === -->
+        <div class="section-head">
+          <h2>Popular albums</h2><a href="#">Show all</a>
+        </div>
+
+        <div class="row scroll-x">
+          <div class="album-card">
+            <img src="Darling.jpg" alt="">
+            <p class="title">Darling</p>
+            <p class="sub">G. V. Prakash Kumar· 2010</p>
+          </div>
+
+
+          <div class="album-card">
+            <img src="Vaaru Veeru.jpeg" alt="">
+            <p class="title">Devadas</p>
+            <p class="sub">Mani Sharma · 2018</p>
+          </div>
+
+
+           <div class="album-card">
+            <img src="Remo.jpg" alt="">
+            <p class="title">Remo</p>
+            <p class="sub">Anirudh Ravichander · 2016</p>
+          </div>
+
+          <br>
+
+          <div class="album-card">
+            <img src="Magadheera.jpeg" alt="">
+            <p class="title">Magadheera</p>
+            <p class="sub">M.M. Keeravani · 2009</p>
+          </div>
+
+
+          <div class="album-card">
+            <img src="Radhe Shyam.jpg" alt="">
+            <p class="title">Radhe Shyam</p>
+            <p class="sub">Justin Prabhakaran · 2022</p>
+          </div>
+
+
+          <div class="album-card">
+            <img src="Sita Ramam.jpeg" alt="">
+            <p class="title">Sita Ramam</p>
+            <p class="sub">Vishal Chandrashekar · 2022</p>
+          </div>
+        </div>
+      </main>
+    </div><!-- /.app-body -->
+  </div><!-- /.main-box -->
+</body>
+</html>

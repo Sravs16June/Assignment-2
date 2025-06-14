@@ -1,0 +1,313 @@
+/* Background */
+.main-box {
+  height: 100vh;
+  background-color: black;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
+.header {
+  height: 7%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hc1, .hc2 {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.hc1 {
+  width: 35%;
+  justify-content: space-around;
+}
+.hc2 {
+  width: 40%;
+  justify-content: space-around;
+}
+
+.hc11, .hc12 {
+  height: 70%;
+  width: 8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.hc12 {
+  background-color: rgb(60, 58, 58);
+}
+.hc13 {
+  height: 70%;
+  width: 70%;
+  background-color: rgb(60, 58, 58);
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.hc21 {
+  height: 70%;
+  width: 40%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.hc21 a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+.hc22, .hc23, .hc24 {
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hc22 {
+  width: 20%;
+}
+.hc23, .hc24 {
+  width: 15%;
+}
+.hc22 button, .hc23 button {
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+.hc24 button {
+  background-color: white;
+  border: 2px solid black;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+/* Icons */
+.brand {
+  font-size: 30px;
+  color: white;
+}
+.home, .search {
+  font-size: 20px;
+  color: white;
+}
+
+/* Search parts */
+.hc131, .hc132, .hc133 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hc131, .hc133 {
+  width: 10%;
+  height: 100%;
+}
+.hc132 {
+  width: 70%;
+  height: 100%;
+}
+.ip-ser {
+  width: 100%;
+  height: 90%;
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+.ip-ser::placeholder {
+  color: #aaa;
+}
+.bar {
+  height: 50%;
+  border: 1px solid white;
+}
+
+/* Content Section */
+.content {
+  height: calc(100% - 7%);
+  padding: 20px 2.5%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+/* Updated .row - allow wrap, no horizontal scroll */
+.row {
+  display: flex;
+  justify-content: flex-start;
+  gap: 24px;
+  flex-wrap: wrap;           /* allow items to wrap */
+  overflow-x: visible;       /* no horizontal scrollbar */
+  padding-bottom: 8px;
+  white-space: normal;       /* allow text wrapping */
+}
+
+/* Remove any .scroll-x styles that added horizontal scroll */
+.scroll-x {
+  overflow-x: visible !important;
+  padding-bottom: 8px;
+}
+
+/* album cards (square) */
+.album-card {
+  flex: 1 1 160px;   /* allow shrink/grow, min 160px */
+  max-width: 160px;
+  cursor: pointer;
+}
+.album-card img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-bottom: 8px;
+}
+.title {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+.sub {
+  font-size: 13px;
+  color: #b3b3b3;
+}
+
+/* artist cards (circle) */
+.artist-row .artist-card {
+  flex: 1 1 128px; /* allow shrink/grow, min 128px */
+  max-width: 128px;
+  text-align: center;
+  cursor: pointer;
+}
+.artist-card img {
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+/* ====== GLOBAL TWEAKS ====== */
+body, button, input {
+  font-family: "Inter", sans-serif;
+}
+::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 4px;
+}
+
+/* lay out sidebar + content under the header */
+.app-body {
+  display: flex;
+  height: calc(100vh - 7%); /* header is 7% tall */
+}
+
+/* ====== SIDEBAR ====== */
+.sidebar {
+  width: 250px;
+  background: #121212;
+  padding: 18px 14px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+.sb-head {
+  display: flex;
+  justify-content: space-between;
+  color: #b3b3b3;
+  font-size: 15px;
+}
+.sb-head i {
+  cursor: pointer;
+}
+.sb-card {
+  background: #242424;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 18px 0;
+}
+.sb-title {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+.sb-sub {
+  font-size: 13px;
+  color: #b3b3b3;
+  margin-bottom: 14px;
+}
+.sb-btn {
+  background: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 18px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #000;
+}
+.sb-foot {
+  margin-top: auto;
+  font-size: 11px;
+  color: #6a6a6a;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.sb-foot a {
+  color: #6a6a6a;
+  text-decoration: none;
+}
+.lang-btn {
+  margin-top: 14px;
+  padding: 6px 12px;
+  border: 1px solid #6a6a6a;
+  background: #000;
+  color: #fff;
+  border-radius: 20px;
+  font-size: 12px;
+  cursor: pointer;
+}
+.lang-btn i {
+  margin-right: 6px;
+}
+
+/* ====== MAIN CONTENT ====== */
+.content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 24px 32px 60px;
+}
+.section-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 14px 0 18px;
+}
+.section-head h2 {
+  font-size: 22px;
+}
+.section-head a {
+  font-size: 14px;
+  color: #b3b3b3;
+  text-decoration: none;
+}
+.section-head a:hover {
+  color: #fff;
+}
+
+/* ===== RESPONSIVE: hide sidebar on narrow screens ===== */
+@media (max-width: 900px) {
+  .sidebar {
+    display: none;
+  }
+  .app-body {
+    height: calc(100vh - 7%);
+    flex-direction: column;
+  }
+}
